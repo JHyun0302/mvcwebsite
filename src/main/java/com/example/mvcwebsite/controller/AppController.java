@@ -34,6 +34,7 @@ public class AppController {
                 .path("/api/v1/queue/allowed")
                 .queryParam("queue", queue)
                 .queryParam("user_id", userId)
+                .queryParam("token", token)
                 .encode()
                 .build()
                 .toUri();
